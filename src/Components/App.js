@@ -10,10 +10,9 @@ class App extends Component {
     bad: 0,
   };
   changeState = (name) => {
-    // const name = e.target.name;
-    name.persist();
-    // this.setState(prevState => ({ [name]: prevState[name] + 1 }));
-    this.setState(prevState => ({ [name]: prevState[name] + 1 }))
+    // name.persist();
+    this.setState(prevState => ({ [name]: prevState[name] + 1 }));
+    // this.setState(prevState => ({ [name]: prevState[name] + 1 }))
   };
 
   render() {
