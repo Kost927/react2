@@ -11,7 +11,7 @@ const Statistics = ({
   return (
     <>
       <h2>Statistics</h2>
-
+    {totalFeedbacks === 0 ? "No feedback given" :
       <ul>
         <li>
           <span>Good:</span>
@@ -36,6 +36,7 @@ const Statistics = ({
           </span>
         </li>
       </ul>
+}
     </>
   );
 };
