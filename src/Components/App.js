@@ -9,11 +9,11 @@ class App extends Component {
     neutral: 0,
     bad: 0,
   };
-  changeState = e => {
-    const name = e.target.name;
-    // e.persist();
-    this.setState(prevState => ({ [name]: prevState[name] + 1 }));
-    // this.setState(prevState => ({ [e.target.name]: prevState[e.target.name] + 1 }))
+  changeState = (name) => {
+    // const name = e.target.name;
+    name.persist();
+    // this.setState(prevState => ({ [name]: prevState[name] + 1 }));
+    this.setState(prevState => ({ [name]: prevState[name] + 1 }))
   };
 
   render() {
