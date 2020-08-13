@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import Statistics from "./Statistics/Statistics";
-import FeedbackOptions from "./FeedbackOptions/FeedbackOptions";
-import SectionTitle from "./SectionTitle/SectionTitle";
+import React, { Component } from 'react';
+import Statistics from './Statistics/Statistics';
+import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
+import SectionTitle from './SectionTitle/SectionTitle';
 
 class App extends Component {
   state = {
     good: 0,
     neutral: 0,
-    bad: 0
+    bad: 0,
   };
   changeState = e => {
     const name = e.target.name;
@@ -17,7 +17,8 @@ class App extends Component {
   };
 
   render() {
-    const totalFeedbacks = this.state.good + this.state.neutral + this.state.bad;
+    const totalFeedbacks =
+      this.state.good + this.state.neutral + this.state.bad;
     const positiveFeedback = (this.state.good / totalFeedbacks) * 100;
 
     return (

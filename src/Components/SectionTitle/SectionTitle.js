@@ -12,7 +12,6 @@ const SectionTitle = ({ children }) => {
 
 export default SectionTitle;
 
-
 SectionTitle.propTypes = {
   children: PropTypes.node,
 };
